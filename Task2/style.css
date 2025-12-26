@@ -1,0 +1,112 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background: #333;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Contact Form */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.contact-form {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 8px;
+}
+
+.contact-form h2 {
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.box {
+    background: #ddd;
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.todo {
+    background: white;
+    width: 350px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.todo input {
+    width: 70%;
+    padding: 8px;
+    background-color: #89aed6;
+}
+
+.todo button {
+    padding: 8px;
+    margin-left: 5px;
+}
+
+.todo ul {
+    list-style: inside;
+    padding: 0;
+}
+
+.todo li {
+    display: flex;
+    justify-content: space-between;
+    background: #4348a6;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
